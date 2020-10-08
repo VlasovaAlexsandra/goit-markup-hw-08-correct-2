@@ -59,13 +59,26 @@
     }
   }
 
+
   @include for-size(tablet) {
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
   }
 
-  @include for-size(tablet-only) {
+  @media screen and (min-width: 319px) and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  // @include for-size(tablet-only) {
+  //   &:nth-child(-n + 2) {
+  //     margin-bottom: 30px;
+  //   }
+  // }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
     }

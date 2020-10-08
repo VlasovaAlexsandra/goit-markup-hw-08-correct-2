@@ -8,6 +8,7 @@
   margin-right: auto;
   margin-left: auto;
 
+
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
@@ -25,6 +26,10 @@
 }
 
 .flex-container {
+  @media screen and (min-width: 319px) and (max-width: 767px) {
+    max-width: 480px;
+  }
+  
   @media screen and (min-width: 319px) and (max-width: 767px) {
     
     margin-right: 0;
