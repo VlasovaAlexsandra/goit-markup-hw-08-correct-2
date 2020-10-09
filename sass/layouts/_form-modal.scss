@@ -13,10 +13,14 @@ textarea {
 }
 
 .form-modal {
-    width: 450px;
+    // width: 450px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
+
+    @media screen and (min-width: 319px) and (max-width: 480px) {
+        width: auto;
+    }
 
     @include for-size(desktop) {
         width: 528px;

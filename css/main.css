@@ -1295,10 +1295,15 @@ textarea {
 }
 
 .form-modal {
-  width: 450px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+}
+
+@media screen and (min-width: 319px) and (max-width: 480px) {
+  .form-modal {
+    width: auto;
+  }
 }
 
 @media (min-width: 1200px) {
